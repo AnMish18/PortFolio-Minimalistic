@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfcd8;
+    --primary-color: #dd12dd;
+    --secondary-color: #dd1709;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #cec1bb;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+/*navbar styling*/
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  body {
+    font-family: var(--font-family);
+  }
+  nav {
+    position:relative;
+    top: 1.5;
+    left: 1;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.9rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(155, 36, 36, 0.26);
+  }
+  
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+/*about me styling*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  }
+  .hero img {
+    height: 20.5rem;
+    width: 17.5rem;
+  }
+  
+  .bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+/*skill section*/
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+  .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+/*projects section*/
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 15%;
+    height: 51%;
+    margin-left:20px;
+    box-shadow: 10px 10px 8px 10px #f8efef;
+    border-radius: 5px;
+  }
+  .project-pics{
+      width:30%;
+      height:50%;
+      margin-left:20px;
+      box-shadow: 10px 10px 8px 10px #f8efef;
+      border-radius: 5px;
+  }
+  .project-pict{
+     height:280px;
+     width:400px;
+     margin-left:20px;
+     box-shadow: 10px 10px 8px 10px #f8efef;
+     border-radius: 5px;
+  }
+/*Contact Me*/
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: rgb(37, 9, 37);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset ;
+  font-size: 0.875rem;
+  outline: none;
+}
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: darkgreen;
+}
+.submit-btn {
+  width: 23%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid peru;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.submit-btn:hover {
+  border: 2px solid powderblue;
+  cursor: pointer;
+}
+/*Socials Section*/
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 2.3rem;
+  height: 2rem;
+}
+/*Scroll Button*/
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+  
+    
