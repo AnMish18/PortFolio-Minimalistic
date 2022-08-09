@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Anwesha Mishra</title>
+    </head>
+
+  <body style="background-color:peachpuff;">
+    <!-- Navbar -->
+    <nav>
+        <h1>ANWESHA MISHRA</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">Know Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">                      <!--hamburger menu-->
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img
+          src="assets/images/yuu.jfif"
+          alt="anwesha"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Hello!, I'm an undergrad at Silicon Institute of Technology.
+            The web has fascinated me since long, so here I am making my mark in a field of diverse and endless knowledge.
+            Hard work and consistency in efforts are the key features which define who I am. 
+            Apart from this, I like investing my time in reading novels, composing music, and writing poems.
+          </p>
+        </div>
+  </section>
+    <!-- More about -->
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">Skills</h2>
+  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-react.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-css3.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-html-5.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-javascript.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-python.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-java.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+          <div class="third-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-nodejs.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-redux.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-git.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+        </div>
+      </section>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="">
+          <div >
+            <img
+              src="assets/images/mern.png"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pics"
+            />
+            <h3 class="project-title">MERN Ecommerce Site</h3>
+            <p class="project-details">
+                An E-Commerce Site.
+            </p>
+            <a href="https://github.com/AnMish18/MERN-ShoppingCart" target="_blank" class="project-link">Here</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/drum.jfif"
+              alt="netflic-clone"
+              loading="lazy"
+              class="project-pict"
+            />
+            <h3 class="project-title">Drum Kit</h3>
+            <p class="project-details">
+              A minimalistic interactive drumkit.
+            </p>
+            <a href="https://github.com/AnMish18/WebJourney/tree/main/DrumKit" target="_blank" class="project-link">Here</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/simon.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Simon Says</h3>
+            <p class="project-details">
+              Follow along as the Simon Says or you're out! 
+            </p>
+            <a href="https://github.com/AnMish18/WebJourney/tree/main/simonGame" target="_blank" class="project-link">Here</a>
+          </div>
+        </div>
+      </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form>
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/anmish2003/" target="_blank"
+        ><img
+          src="https://img.icons8.com/ios-glyphs/30/000000/linkedin-circled--v1.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/AnMish18" target="_blank"
+        ><img
+          src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+          alt="Github"
+          loading="lazy"
+          class="socicon"
+      /></a>
+    <!-- Scroll to top -->
+
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="https://img.icons8.com/ios/50/000000/up-squared.png"
+      class="socicon up-arrow"
+      alt="scroll-up"
+  /></i>
+    <!-- Website scripts -->
+    <script src="assets/js/scroll.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
